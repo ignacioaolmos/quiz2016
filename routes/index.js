@@ -10,5 +10,7 @@ var quizController = require('../controllers/quiz_controller');
  
 router.get('/question', quizController.question);
 router.get('/check',    quizController.check);
-
+router.get('/author', function(req, res, next) {
+res.render('author');
+});
  module.exports = router;
